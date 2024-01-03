@@ -1,17 +1,20 @@
 import { Canvas } from '@react-three/fiber'
 import { ARButton, XR } from '@react-three/xr'
-import React from 'react'
 import ArModel from '../components/ArModel'
-import  Model  from '../components/Scene'
+import React from 'react'
+import Scene  from '../components/Scene'
+import { OrbitControls } from '@react-three/drei'
 
 const ARexperience = () => {
   return (
-    <div>
+    <div className='h-screen'>
         <ARButton />
         <Canvas>
             <XR>
-                <ArModel />
-                <Model />
+              <ambientLight intensity={0.7} />
+              <OrbitControls />
+              <Scene />
+
             </XR>
         </Canvas>
     </div>
