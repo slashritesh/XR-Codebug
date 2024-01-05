@@ -11,7 +11,7 @@ const Goleling = () => {
   return (
     <>
     <ambientLight intensity={0.5} />
-      <mesh position={[-4, 5, -15]}>
+      <mesh position={[-5, 7, -15]}>
         <primitive object={scene} />
       </mesh>
 
