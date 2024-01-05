@@ -1,9 +1,15 @@
 import { Canvas } from '@react-three/fiber'
 import { ARButton, XR } from '@react-three/xr'
-import ArModel from '../components/ArModel'
 import React from 'react'
 import Scene  from '../components/Scene'
 import { OrbitControls } from '@react-three/drei'
+import Demon from '../components/Demon'
+import DragonEvolved from '../components/DragonEvolved'
+import Tribal from '../components/Tribal'
+import GhostSkull from '../components/GhostSkull'
+import Goleling from '../components/Goleling'
+import Pigeon from '../components/Pigeon'
+import Ninja from '../components/Ninja'
 
 const ARexperience = () => {
   return (
@@ -11,10 +17,15 @@ const ARexperience = () => {
         <ARButton />
         <Canvas>
             <XR>
-              <ambientLight intensity={0.7} />
+              <ambientLight intensity={0.2} />
               <OrbitControls />
-              <Scene />
-
+              <Demon />
+              <DragonEvolved />
+              <Tribal />
+              <GhostSkull />
+              <Goleling />
+              <Pigeon />
+              {/* <Ninja  /> */}
             </XR>
         </Canvas>
     </div>
